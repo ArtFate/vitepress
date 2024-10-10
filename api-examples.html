@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Runtime API Examples | ArtFate</title>
+    <meta name="description" content="基础建站指南">
+    <meta name="generator" content="VitePress v1.4.0">
+    <link rel="preload stylesheet" href="/vitepress/assets/style.DzVE_gt3.css" as="style">
+    
+    <script type="module" src="/vitepress/assets/app.BMXUoOiu.js"></script>
+    <link rel="preload" href="/vitepress/assets/inter-roman-latin.Di8DUHzh.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="/vitepress/assets/chunks/theme.D2RY1Riv.js">
+    <link rel="modulepreload" href="/vitepress/assets/chunks/framework.CMIMqkfQ.js">
+    <link rel="modulepreload" href="/vitepress/assets/api-examples.md.Cz57fMoA.lean.js">
+    <script id="check-dark-mode">(()=>{const e=localStorage.getItem("vitepress-theme-appearance")||"dark",a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  </head>
+  <body>
+    <div id="app"><div class="Layout" data-v-428610e4><!--[--><!--]--><!--[--><span tabindex="-1" data-v-645e6774></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-645e6774> Skip to content </a><!--]--><!----><header class="VPNav" data-v-428610e4 data-v-7098a4fb><div class="VPNavBar" data-v-7098a4fb data-v-fe4961ff><div class="wrapper" data-v-fe4961ff><div class="container" data-v-fe4961ff><div class="title" data-v-fe4961ff><div class="VPNavBarTitle has-sidebar" data-v-fe4961ff data-v-019a4268><a class="title" href="/vitepress/" data-v-019a4268><!--[--><!--]--><!----><span data-v-019a4268>ArtFate</span><!--[--><!--]--></a></div></div><div class="content" data-v-fe4961ff><div class="content-body" data-v-fe4961ff><!--[--><!--]--><div class="VPNavBarSearch search" data-v-fe4961ff><!--[--><!----><div id="local-search"><button type="button" class="DocSearch DocSearch-Button" aria-label="搜索文档"><span class="DocSearch-Button-Container"><span class="vp-icon DocSearch-Search-Icon"></span><span class="DocSearch-Button-Placeholder">搜索文档</span></span><span class="DocSearch-Button-Keys"><kbd class="DocSearch-Button-Key"></kbd><kbd class="DocSearch-Button-Key">K</kbd></span></button></div><!--]--></div><nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-fe4961ff data-v-f91fa980><span id="main-nav-aria-label" class="visually-hidden" data-v-f91fa980> Main Navigation </span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/vitepress/" tabindex="0" data-v-f91fa980 data-v-fd28c5b3><!--[--><span data-v-fd28c5b3>主页</span><!--]--></a><!--]--><!--[--><a class="VPLink link vp-external-link-icon VPNavBarMenuLink" href="https://artfate.github.io/" target="_blank" rel="noreferrer" tabindex="0" data-v-f91fa980 data-v-fd28c5b3><!--[--><span data-v-fd28c5b3>Blog</span><!--]--></a><!--]--><!--]--></nav><!----><div class="VPNavBarAppearance appearance" data-v-fe4961ff data-v-e91e4b0c><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="true" data-v-e91e4b0c data-v-453b08d5 data-v-b2281ddb><span class="check" data-v-b2281ddb><span class="icon" data-v-b2281ddb><!--[--><span class="vpi-sun sun" data-v-453b08d5></span><span class="vpi-moon moon" data-v-453b08d5></span><!--]--></span></span></button></div><div class="VPSocialLinks VPNavBarSocialLinks social-links" data-v-fe4961ff data-v-228b9843 data-v-c1898a92><!--[--><a class="VPSocialLink no-icon" href="https://github.com/vuejs/vitepress" aria-label="github" target="_blank" rel="noopener" data-v-c1898a92 data-v-47ab2d08><span class="vpi-social-github" /></a><!--]--></div><div class="VPFlyout VPNavBarExtra extra" data-v-fe4961ff data-v-40c5662a data-v-b80abf40><button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="extra navigation" data-v-b80abf40><span class="vpi-more-horizontal icon" data-v-b80abf40></span></button><div class="menu" data-v-b80abf40><div class="VPMenu" data-v-b80abf40 data-v-d835670a><!----><!--[--><!--[--><!----><div class="group" data-v-40c5662a><div class="item appearance" data-v-40c5662a><p class="label" data-v-40c5662a>Appearance</p><div class="appearance-action" data-v-40c5662a><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="true" data-v-40c5662a data-v-453b08d5 data-v-b2281ddb><span class="check" data-v-b2281ddb><span class="icon" data-v-b2281ddb><!--[--><span class="vpi-sun sun" data-v-453b08d5></span><span class="vpi-moon moon" data-v-453b08d5></span><!--]--></span></span></button></div></div></div><div class="group" data-v-40c5662a><div class="item social-links" data-v-40c5662a><div class="VPSocialLinks social-links-list" data-v-40c5662a data-v-c1898a92><!--[--><a class="VPSocialLink no-icon" href="https://github.com/vuejs/vitepress" aria-label="github" target="_blank" rel="noopener" data-v-c1898a92 data-v-47ab2d08><span class="vpi-social-github" /></a><!--]--></div></div></div><!--]--><!--]--></div></div></div><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-fe4961ff data-v-f037809c><span class="container" data-v-f037809c><span class="top" data-v-f037809c></span><span class="middle" data-v-f037809c></span><span class="bottom" data-v-f037809c></span></span></button></div></div></div></div><div class="divider" data-v-fe4961ff><div class="divider-line" data-v-fe4961ff></div></div></div><!----></header><div class="VPLocalNav has-sidebar empty" data-v-428610e4 data-v-feb48f27><div class="container" data-v-feb48f27><button class="menu" aria-expanded="false" aria-controls="VPSidebarNav" data-v-feb48f27><span class="vpi-align-left menu-icon" data-v-feb48f27></span><span class="menu-text" data-v-feb48f27>Menu</span></button><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-v-feb48f27 data-v-4c516d50><button data-v-4c516d50>Return to top</button><!----></div></div></div><aside class="VPSidebar" data-v-428610e4 data-v-1c4e8386><div class="curtain" data-v-1c4e8386></div><nav class="nav" id="VPSidebarNav" aria-labelledby="sidebar-aria-label" tabindex="-1" data-v-1c4e8386><span class="visually-hidden" id="sidebar-aria-label" data-v-1c4e8386> Sidebar Navigation </span><!--[--><!--]--><!--[--><div class="no-transition group" data-v-dd1d12d6><section class="VPSidebarItem level-0" data-v-dd1d12d6 data-v-f8ca518f><div class="item" role="button" tabindex="0" data-v-f8ca518f><div class="indicator" data-v-f8ca518f></div><h2 class="text" data-v-f8ca518f>网站搭建文档</h2><!----></div><div class="items" data-v-f8ca518f><!--[--><div class="VPSidebarItem level-1 is-link" data-v-f8ca518f data-v-f8ca518f><div class="item" data-v-f8ca518f><div class="indicator" data-v-f8ca518f></div><a class="VPLink link link" href="/vitepress/指南/" data-v-f8ca518f><!--[--><p class="text" data-v-f8ca518f>前言</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-f8ca518f data-v-f8ca518f><div class="item" data-v-f8ca518f><div class="indicator" data-v-f8ca518f></div><a class="VPLink link link" href="/vitepress/%E6%8C%87%E5%8D%97/%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87" data-v-f8ca518f><!--[--><p class="text" data-v-f8ca518f>前期准备</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-f8ca518f data-v-f8ca518f><div class="item" data-v-f8ca518f><div class="indicator" data-v-f8ca518f></div><a class="VPLink link link" href="/vitepress/%E6%8C%87%E5%8D%97/%E5%88%9D%E6%AD%A5%E4%BA%86%E8%A7%A3WordPress" data-v-f8ca518f><!--[--><p class="text" data-v-f8ca518f>初步了解WordPress</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-f8ca518f data-v-f8ca518f><div class="item" data-v-f8ca518f><div class="indicator" data-v-f8ca518f></div><a class="VPLink link link" href="/vitepress/%E6%8C%87%E5%8D%97/%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6" data-v-f8ca518f><!--[--><p class="text" data-v-f8ca518f>常用插件</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-f8ca518f data-v-f8ca518f><div class="item" data-v-f8ca518f><div class="indicator" data-v-f8ca518f></div><a class="VPLink link link" href="/vitepress/%E6%8C%87%E5%8D%97/%E6%9B%B4%E6%96%B0%E4%B8%8E%E7%BB%B4%E6%8A%A4" data-v-f8ca518f><!--[--><p class="text" data-v-f8ca518f>更新与维护</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-f8ca518f data-v-f8ca518f><div class="item" data-v-f8ca518f><div class="indicator" data-v-f8ca518f></div><a class="VPLink link link" href="/vitepress/%E6%8C%87%E5%8D%97/%E5%A4%87%E4%BB%BD%E4%B8%8E%E8%BF%98%E5%8E%9F" data-v-f8ca518f><!--[--><p class="text" data-v-f8ca518f>备份与还原</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-f8ca518f data-v-f8ca518f><div class="item" data-v-f8ca518f><div class="indicator" data-v-f8ca518f></div><a class="VPLink link link" href="/vitepress/%E6%8C%87%E5%8D%97/CDN" data-v-f8ca518f><!--[--><p class="text" data-v-f8ca518f>CDN网站加速</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-f8ca518f data-v-f8ca518f><div class="item" data-v-f8ca518f><div class="indicator" data-v-f8ca518f></div><a class="VPLink link link" href="/vitepress/%E6%8C%87%E5%8D%97/EDM%E8%90%A5%E9%94%80" data-v-f8ca518f><!--[--><p class="text" data-v-f8ca518f>EDM营销</p><!--]--></a><!----></div><!----></div><!--]--></div></section></div><!--]--><!--[--><!--]--></nav></aside><div class="VPContent has-sidebar" id="VPContent" data-v-428610e4 data-v-b4367d27><div class="VPDoc has-sidebar has-aside" data-v-b4367d27 data-v-66af6b56><!--[--><!--]--><div class="container" data-v-66af6b56><div class="aside" data-v-66af6b56><div class="aside-curtain" data-v-66af6b56></div><div class="aside-container" data-v-66af6b56><div class="aside-content" data-v-66af6b56><div class="VPDocAside" data-v-66af6b56 data-v-d868a7c6><!--[--><!--]--><!--[--><!--]--><nav aria-labelledby="doc-outline-aria-label" class="VPDocAsideOutline" data-v-d868a7c6 data-v-a54ea4de><div class="content" data-v-a54ea4de><div class="outline-marker" data-v-a54ea4de></div><div aria-level="2" class="outline-title" id="doc-outline-aria-label" role="heading" data-v-a54ea4de>页面导航</div><ul class="VPDocOutlineItem root" data-v-a54ea4de data-v-a78a40af><!--[--><!--]--></ul></div></nav><!--[--><!--]--><div class="spacer" data-v-d868a7c6></div><!--[--><!--]--><!----><!--[--><!--]--><!--[--><!--]--></div></div></div></div><div class="content" data-v-66af6b56><div class="content-container" data-v-66af6b56><!--[--><!--]--><main class="main" data-v-66af6b56><div style="position:relative;" class="vp-doc _vitepress_api-examples" data-v-66af6b56><div><h1 id="runtime-api-examples" tabindex="-1">Runtime API Examples <a class="header-anchor" href="#runtime-api-examples" aria-label="Permalink to &quot;Runtime API Examples&quot;">​</a></h1><p>This page demonstrates usage of some of the runtime APIs provided by VitePress.</p><p>The main <code>useData()</code> API can be used to access site, theme, and page data for the current page. It works in both <code>.md</code> and <code>.vue</code> files:</p><div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">script</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> setup</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { useData } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> &#39;vitepress&#39;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">const</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">theme</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">page</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">frontmatter</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> useData</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">()</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">## Results</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">### Theme Data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">pre</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;{{ theme }}&lt;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">pre</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">### Page Data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">pre</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;{{ page }}&lt;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">pre</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">### Page Frontmatter</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">pre</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;{{ frontmatter }}&lt;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">pre</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;</span></span></code></pre></div><h2 id="results" tabindex="-1">Results <a class="header-anchor" href="#results" aria-label="Permalink to &quot;Results&quot;">​</a></h2><h3 id="theme-data" tabindex="-1">Theme Data <a class="header-anchor" href="#theme-data" aria-label="Permalink to &quot;Theme Data&quot;">​</a></h3><pre>{
+  &quot;outlineTitle&quot;: &quot;页面导航&quot;,
+  &quot;outline&quot;: [
+    2,
+    6
+  ],
+  &quot;nav&quot;: [
+    {
+      &quot;text&quot;: &quot;主页&quot;,
+      &quot;link&quot;: &quot;/&quot;
+    },
+    {
+      &quot;text&quot;: &quot;Blog&quot;,
+      &quot;link&quot;: &quot;https://artfate.github.io/&quot;
+    }
+  ],
+  &quot;search&quot;: {
+    &quot;provider&quot;: &quot;local&quot;,
+    &quot;options&quot;: {
+      &quot;translations&quot;: {
+        &quot;button&quot;: {
+          &quot;buttonText&quot;: &quot;搜索文档&quot;,
+          &quot;buttonAriaLabel&quot;: &quot;搜索文档&quot;
+        },
+        &quot;modal&quot;: {
+          &quot;noResultsText&quot;: &quot;无法找到相关结果&quot;,
+          &quot;resetButtonTitle&quot;: &quot;清除查询条件&quot;,
+          &quot;footer&quot;: {
+            &quot;selectText&quot;: &quot;选择&quot;,
+            &quot;navigateText&quot;: &quot;切换&quot;
+          }
+        }
+      }
+    }
+  },
+  &quot;sidebar&quot;: [
+    {
+      &quot;text&quot;: &quot;网站搭建文档&quot;,
+      &quot;items&quot;: [
+        {
+          &quot;text&quot;: &quot;前言&quot;,
+          &quot;link&quot;: &quot;/指南/&quot;
+        },
+        {
+          &quot;text&quot;: &quot;前期准备&quot;,
+          &quot;link&quot;: &quot;/指南/前期准备&quot;
+        },
+        {
+          &quot;text&quot;: &quot;初步了解WordPress&quot;,
+          &quot;link&quot;: &quot;/指南/初步了解WordPress&quot;
+        },
+        {
+          &quot;text&quot;: &quot;常用插件&quot;,
+          &quot;link&quot;: &quot;/指南/常用插件&quot;
+        },
+        {
+          &quot;text&quot;: &quot;更新与维护&quot;,
+          &quot;link&quot;: &quot;/指南/更新与维护&quot;
+        },
+        {
+          &quot;text&quot;: &quot;备份与还原&quot;,
+          &quot;link&quot;: &quot;/指南/备份与还原&quot;
+        },
+        {
+          &quot;text&quot;: &quot;CDN网站加速&quot;,
+          &quot;link&quot;: &quot;/指南/CDN&quot;
+        },
+        {
+          &quot;text&quot;: &quot;EDM营销&quot;,
+          &quot;link&quot;: &quot;/指南/EDM营销&quot;
+        }
+      ]
+    }
+  ],
+  &quot;socialLinks&quot;: [
+    {
+      &quot;icon&quot;: &quot;github&quot;,
+      &quot;link&quot;: &quot;https://github.com/vuejs/vitepress&quot;
+    }
+  ],
+  &quot;footer&quot;: {
+    &quot;copyright&quot;: &quot;Copyright © 2023-2024 ArtFate&quot;
+  }
+}</pre><h3 id="page-data" tabindex="-1">Page Data <a class="header-anchor" href="#page-data" aria-label="Permalink to &quot;Page Data&quot;">​</a></h3><pre>{
+  &quot;title&quot;: &quot;Runtime API Examples&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;frontmatter&quot;: {
+    &quot;outline&quot;: &quot;deep&quot;
+  },
+  &quot;headers&quot;: [],
+  &quot;relativePath&quot;: &quot;api-examples.md&quot;,
+  &quot;filePath&quot;: &quot;api-examples.md&quot;
+}</pre><h3 id="page-frontmatter" tabindex="-1">Page Frontmatter <a class="header-anchor" href="#page-frontmatter" aria-label="Permalink to &quot;Page Frontmatter&quot;">​</a></h3><pre>{
+  &quot;outline&quot;: &quot;deep&quot;
+}</pre><h2 id="more" tabindex="-1">More <a class="header-anchor" href="#more" aria-label="Permalink to &quot;More&quot;">​</a></h2><p>Check out the documentation for the <a href="https://vitepress.dev/reference/runtime-api#usedata" target="_blank" rel="noreferrer">full list of runtime APIs</a>.</p></div></div></main><footer class="VPDocFooter" data-v-66af6b56 data-v-964bf0b6><!--[--><!--]--><!----><nav class="prev-next" aria-labelledby="doc-footer-aria-label" data-v-964bf0b6><span class="visually-hidden" id="doc-footer-aria-label" data-v-964bf0b6>Pager</span><div class="pager" data-v-964bf0b6><!----></div><div class="pager" data-v-964bf0b6><a class="VPLink link pager-link next" href="/vitepress/指南/" data-v-964bf0b6><!--[--><span class="desc" data-v-964bf0b6>Next page</span><span class="title" data-v-964bf0b6>前言</span><!--]--></a></div></nav></footer><!--[--><!--]--></div></div></div><!--[--><!--]--></div></div><footer class="VPFooter has-sidebar" data-v-428610e4 data-v-cdf300c6><div class="container" data-v-cdf300c6><!----><p class="copyright" data-v-cdf300c6>Copyright © 2023-2024 ArtFate</p></div></footer><!--[--><!--]--></div></div>
+    <script>window.__VP_HASH_MAP__=JSON.parse("{\"api-examples.md\":\"Cz57fMoA\",\"index.md\":\"C03xtnR5\",\"markdown-examples.md\":\"65BtNhU6\",\"指南_cdn.md\":\"D_89oK1c\",\"指南_edm营销.md\":\"C_fCJW4l\",\"指南_index.md\":\"CarGIPI5\",\"指南_初步了解wordpress.md\":\"CJNE8mER\",\"指南_前期准备.md\":\"B-wmse5X\",\"指南_备份与还原.md\":\"DlzTVx73\",\"指南_常用插件.md\":\"BgSs6ad8\",\"指南_更新与维护.md\":\"BhnXUWTa\"}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"zh-CN\",\"dir\":\"ltr\",\"title\":\"ArtFate\",\"description\":\"基础建站指南\",\"base\":\"/vitepress/\",\"head\":[],\"router\":{\"prefetchLinks\":true},\"appearance\":\"dark\",\"themeConfig\":{\"outlineTitle\":\"页面导航\",\"outline\":[2,6],\"nav\":[{\"text\":\"主页\",\"link\":\"/\"},{\"text\":\"Blog\",\"link\":\"https://artfate.github.io/\"}],\"search\":{\"provider\":\"local\",\"options\":{\"translations\":{\"button\":{\"buttonText\":\"搜索文档\",\"buttonAriaLabel\":\"搜索文档\"},\"modal\":{\"noResultsText\":\"无法找到相关结果\",\"resetButtonTitle\":\"清除查询条件\",\"footer\":{\"selectText\":\"选择\",\"navigateText\":\"切换\"}}}}},\"sidebar\":[{\"text\":\"网站搭建文档\",\"items\":[{\"text\":\"前言\",\"link\":\"/指南/\"},{\"text\":\"前期准备\",\"link\":\"/指南/前期准备\"},{\"text\":\"初步了解WordPress\",\"link\":\"/指南/初步了解WordPress\"},{\"text\":\"常用插件\",\"link\":\"/指南/常用插件\"},{\"text\":\"更新与维护\",\"link\":\"/指南/更新与维护\"},{\"text\":\"备份与还原\",\"link\":\"/指南/备份与还原\"},{\"text\":\"CDN网站加速\",\"link\":\"/指南/CDN\"},{\"text\":\"EDM营销\",\"link\":\"/指南/EDM营销\"}]}],\"socialLinks\":[{\"icon\":\"github\",\"link\":\"https://github.com/vuejs/vitepress\"}],\"footer\":{\"copyright\":\"Copyright © 2023-2024 ArtFate\"}},\"locales\":{},\"scrollOffset\":134,\"cleanUrls\":true}");</script>
+    
+  </body>
+</html>
